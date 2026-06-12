@@ -1,0 +1,8 @@
+.DS_Store
+.npm-cache/
+.superpowers/
+node_modules/
+dist/
+*.tsbuildinfo
+vite.config.d.ts
+public/assets/aeroris-demo/**/logits/

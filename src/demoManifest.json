@@ -1,0 +1,3371 @@
+{
+  "version": "1.0",
+  "generated_at": "2026-06-12T15:54:12+08:00",
+  "note": "AeroRIS demo outputs for frontend presentation",
+  "source_split": "test",
+  "logits_note": "Raw logits were not available; logits/*.npy are derived float32 proxy maps from binary masks.",
+  "cases": [
+    {
+      "case_id": "small_target_01",
+      "category_id": "small_target",
+      "category_index": 1,
+      "category_total": 10,
+      "title": "小目标单实例",
+      "category": "Small Target",
+      "split": "test",
+      "dataset_index": "3003",
+      "image_id": "0000006_00611_d_0000002.jpg",
+      "expression": "The blue cars park near the construction materials.",
+      "is_empty_target": false,
+      "instance_count": 1,
+      "union_area_px": 1538,
+      "bbox_xywh": [
+        387,
+        387,
+        40,
+        44
+      ],
+      "display_focus": "展示 baseline 对小目标响应不足，以及 Stage 2 TTA 的激活增强。",
+      "assets": {
+        "original": "cases/small_target/small_target_01/input.jpg",
+        "gt_mask": "cases/small_target/small_target_01/gt_union_mask.png",
+        "gt_overlay": "cases/small_target/small_target_01/gt_overlay.jpg",
+        "cris_mask": "cases/small_target/small_target_01/cris_mask.png",
+        "cris_heatmap": "cases/small_target/small_target_01/cris_heatmap.png",
+        "cris_overlay": "cases/small_target/small_target_01/cris_overlay.jpg",
+        "stage1_mask": "cases/small_target/small_target_01/stage1_mask.png",
+        "stage1_heatmap": "cases/small_target/small_target_01/stage1_heatmap.png",
+        "stage1_overlay": "cases/small_target/small_target_01/stage1_overlay.jpg",
+        "stage2_mask": "cases/small_target/small_target_01/stage2_mask.png",
+        "stage2_heatmap": "cases/small_target/small_target_01/stage2_heatmap.png",
+        "stage2_overlay": "cases/small_target/small_target_01/stage2_overlay.jpg",
+        "final_comparison": "cases/small_target/small_target_01/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.7889,
+          "dice": 0.882,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.7062,
+          "dice": 0.8278,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/0000006_00611_d_0000002.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/3003.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "small_target_02",
+      "category_id": "small_target",
+      "category_index": 2,
+      "category_total": 10,
+      "title": "小目标单实例",
+      "category": "Small Target",
+      "split": "test",
+      "dataset_index": "2005",
+      "image_id": "9999979_00000_d_0000043.jpg",
+      "expression": "The green vehicles in the image.",
+      "is_empty_target": false,
+      "instance_count": 1,
+      "union_area_px": 834,
+      "bbox_xywh": [
+        734,
+        251,
+        25,
+        41
+      ],
+      "display_focus": "展示 baseline 对小目标响应不足，以及 Stage 2 TTA 的激活增强。",
+      "assets": {
+        "original": "cases/small_target/small_target_02/input.jpg",
+        "gt_mask": "cases/small_target/small_target_02/gt_union_mask.png",
+        "gt_overlay": "cases/small_target/small_target_02/gt_overlay.jpg",
+        "cris_mask": "cases/small_target/small_target_02/cris_mask.png",
+        "cris_heatmap": "cases/small_target/small_target_02/cris_heatmap.png",
+        "cris_overlay": "cases/small_target/small_target_02/cris_overlay.jpg",
+        "stage1_mask": "cases/small_target/small_target_02/stage1_mask.png",
+        "stage1_heatmap": "cases/small_target/small_target_02/stage1_heatmap.png",
+        "stage1_overlay": "cases/small_target/small_target_02/stage1_overlay.jpg",
+        "stage2_mask": "cases/small_target/small_target_02/stage2_mask.png",
+        "stage2_heatmap": "cases/small_target/small_target_02/stage2_heatmap.png",
+        "stage2_overlay": "cases/small_target/small_target_02/stage2_overlay.jpg",
+        "final_comparison": "cases/small_target/small_target_02/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.6808,
+          "dice": 0.8101,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.8311,
+          "dice": 0.9077,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999979_00000_d_0000043.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/2005.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "small_target_03",
+      "category_id": "small_target",
+      "category_index": 3,
+      "category_total": 10,
+      "title": "小目标单实例",
+      "category": "Small Target",
+      "split": "test",
+      "dataset_index": "3102",
+      "image_id": "9999952_00000_d_0000033.jpg",
+      "expression": "The truck in the middle lane.",
+      "is_empty_target": false,
+      "instance_count": 1,
+      "union_area_px": 1697,
+      "bbox_xywh": [
+        711,
+        280,
+        38,
+        63
+      ],
+      "display_focus": "展示 baseline 对小目标响应不足，以及 Stage 2 TTA 的激活增强。",
+      "assets": {
+        "original": "cases/small_target/small_target_03/input.jpg",
+        "gt_mask": "cases/small_target/small_target_03/gt_union_mask.png",
+        "gt_overlay": "cases/small_target/small_target_03/gt_overlay.jpg",
+        "cris_mask": "cases/small_target/small_target_03/cris_mask.png",
+        "cris_heatmap": "cases/small_target/small_target_03/cris_heatmap.png",
+        "cris_overlay": "cases/small_target/small_target_03/cris_overlay.jpg",
+        "stage1_mask": "cases/small_target/small_target_03/stage1_mask.png",
+        "stage1_heatmap": "cases/small_target/small_target_03/stage1_heatmap.png",
+        "stage1_overlay": "cases/small_target/small_target_03/stage1_overlay.jpg",
+        "stage2_mask": "cases/small_target/small_target_03/stage2_mask.png",
+        "stage2_heatmap": "cases/small_target/small_target_03/stage2_heatmap.png",
+        "stage2_overlay": "cases/small_target/small_target_03/stage2_overlay.jpg",
+        "final_comparison": "cases/small_target/small_target_03/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.7665,
+          "dice": 0.8678,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.8257,
+          "dice": 0.9046,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999952_00000_d_0000033.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/3102.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "small_target_04",
+      "category_id": "small_target",
+      "category_index": 4,
+      "category_total": 10,
+      "title": "小目标单实例",
+      "category": "Small Target",
+      "split": "test",
+      "dataset_index": "1278",
+      "image_id": "9999952_00000_d_0000342.jpg",
+      "expression": "The van is located near the center of the image.",
+      "is_empty_target": false,
+      "instance_count": 1,
+      "union_area_px": 1956,
+      "bbox_xywh": [
+        489,
+        402,
+        49,
+        57
+      ],
+      "display_focus": "展示 baseline 对小目标响应不足，以及 Stage 2 TTA 的激活增强。",
+      "assets": {
+        "original": "cases/small_target/small_target_04/input.jpg",
+        "gt_mask": "cases/small_target/small_target_04/gt_union_mask.png",
+        "gt_overlay": "cases/small_target/small_target_04/gt_overlay.jpg",
+        "cris_mask": "cases/small_target/small_target_04/cris_mask.png",
+        "cris_heatmap": "cases/small_target/small_target_04/cris_heatmap.png",
+        "cris_overlay": "cases/small_target/small_target_04/cris_overlay.jpg",
+        "stage1_mask": "cases/small_target/small_target_04/stage1_mask.png",
+        "stage1_heatmap": "cases/small_target/small_target_04/stage1_heatmap.png",
+        "stage1_overlay": "cases/small_target/small_target_04/stage1_overlay.jpg",
+        "stage2_mask": "cases/small_target/small_target_04/stage2_mask.png",
+        "stage2_heatmap": "cases/small_target/small_target_04/stage2_heatmap.png",
+        "stage2_overlay": "cases/small_target/small_target_04/stage2_overlay.jpg",
+        "final_comparison": "cases/small_target/small_target_04/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.829,
+          "dice": 0.9065,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.8139,
+          "dice": 0.8974,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999952_00000_d_0000342.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/1278.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "small_target_05",
+      "category_id": "small_target",
+      "category_index": 5,
+      "category_total": 10,
+      "title": "小目标单实例",
+      "category": "Small Target",
+      "split": "test",
+      "dataset_index": "466",
+      "image_id": "9999993_00000_d_0000008.jpg",
+      "expression": "The green awning-tricycle moves in the middle of the alley.",
+      "is_empty_target": false,
+      "instance_count": 1,
+      "union_area_px": 1771,
+      "bbox_xywh": [
+        588,
+        674,
+        31,
+        72
+      ],
+      "display_focus": "展示 baseline 对小目标响应不足，以及 Stage 2 TTA 的激活增强。",
+      "assets": {
+        "original": "cases/small_target/small_target_05/input.jpg",
+        "gt_mask": "cases/small_target/small_target_05/gt_union_mask.png",
+        "gt_overlay": "cases/small_target/small_target_05/gt_overlay.jpg",
+        "cris_mask": "cases/small_target/small_target_05/cris_mask.png",
+        "cris_heatmap": "cases/small_target/small_target_05/cris_heatmap.png",
+        "cris_overlay": "cases/small_target/small_target_05/cris_overlay.jpg",
+        "stage1_mask": "cases/small_target/small_target_05/stage1_mask.png",
+        "stage1_heatmap": "cases/small_target/small_target_05/stage1_heatmap.png",
+        "stage1_overlay": "cases/small_target/small_target_05/stage1_overlay.jpg",
+        "stage2_mask": "cases/small_target/small_target_05/stage2_mask.png",
+        "stage2_heatmap": "cases/small_target/small_target_05/stage2_heatmap.png",
+        "stage2_overlay": "cases/small_target/small_target_05/stage2_overlay.jpg",
+        "final_comparison": "cases/small_target/small_target_05/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.8544,
+          "dice": 0.9215,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.8057,
+          "dice": 0.8924,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999993_00000_d_0000008.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/466.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "small_target_06",
+      "category_id": "small_target",
+      "category_index": 6,
+      "category_total": 10,
+      "title": "小目标单实例",
+      "category": "Small Target",
+      "split": "test",
+      "dataset_index": "2197",
+      "image_id": "9999952_00000_d_0000117.jpg",
+      "expression": "The car is located near the center left of the image.",
+      "is_empty_target": false,
+      "instance_count": 1,
+      "union_area_px": 926,
+      "bbox_xywh": [
+        432,
+        364,
+        37,
+        33
+      ],
+      "display_focus": "展示 baseline 对小目标响应不足，以及 Stage 2 TTA 的激活增强。",
+      "assets": {
+        "original": "cases/small_target/small_target_06/input.jpg",
+        "gt_mask": "cases/small_target/small_target_06/gt_union_mask.png",
+        "gt_overlay": "cases/small_target/small_target_06/gt_overlay.jpg",
+        "cris_mask": "cases/small_target/small_target_06/cris_mask.png",
+        "cris_heatmap": "cases/small_target/small_target_06/cris_heatmap.png",
+        "cris_overlay": "cases/small_target/small_target_06/cris_overlay.jpg",
+        "stage1_mask": "cases/small_target/small_target_06/stage1_mask.png",
+        "stage1_heatmap": "cases/small_target/small_target_06/stage1_heatmap.png",
+        "stage1_overlay": "cases/small_target/small_target_06/stage1_overlay.jpg",
+        "stage2_mask": "cases/small_target/small_target_06/stage2_mask.png",
+        "stage2_heatmap": "cases/small_target/small_target_06/stage2_heatmap.png",
+        "stage2_overlay": "cases/small_target/small_target_06/stage2_overlay.jpg",
+        "final_comparison": "cases/small_target/small_target_06/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.7331,
+          "dice": 0.846,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.7907,
+          "dice": 0.8831,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999952_00000_d_0000117.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/2197.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "small_target_07",
+      "category_id": "small_target",
+      "category_index": 7,
+      "category_total": 10,
+      "title": "小目标单实例",
+      "category": "Small Target",
+      "split": "test",
+      "dataset_index": "3272",
+      "image_id": "9999938_00000_d_0000090.jpg",
+      "expression": "The white car near the buildings and overpass.",
+      "is_empty_target": false,
+      "instance_count": 1,
+      "union_area_px": 459,
+      "bbox_xywh": [
+        695,
+        200,
+        18,
+        30
+      ],
+      "display_focus": "展示 baseline 对小目标响应不足，以及 Stage 2 TTA 的激活增强。",
+      "assets": {
+        "original": "cases/small_target/small_target_07/input.jpg",
+        "gt_mask": "cases/small_target/small_target_07/gt_union_mask.png",
+        "gt_overlay": "cases/small_target/small_target_07/gt_overlay.jpg",
+        "cris_mask": "cases/small_target/small_target_07/cris_mask.png",
+        "cris_heatmap": "cases/small_target/small_target_07/cris_heatmap.png",
+        "cris_overlay": "cases/small_target/small_target_07/cris_overlay.jpg",
+        "stage1_mask": "cases/small_target/small_target_07/stage1_mask.png",
+        "stage1_heatmap": "cases/small_target/small_target_07/stage1_heatmap.png",
+        "stage1_overlay": "cases/small_target/small_target_07/stage1_overlay.jpg",
+        "stage2_mask": "cases/small_target/small_target_07/stage2_mask.png",
+        "stage2_heatmap": "cases/small_target/small_target_07/stage2_heatmap.png",
+        "stage2_overlay": "cases/small_target/small_target_07/stage2_overlay.jpg",
+        "final_comparison": "cases/small_target/small_target_07/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.4491,
+          "dice": 0.6199,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.7903,
+          "dice": 0.8829,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999938_00000_d_0000090.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/3272.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "small_target_08",
+      "category_id": "small_target",
+      "category_index": 8,
+      "category_total": 10,
+      "title": "小目标单实例",
+      "category": "Small Target",
+      "split": "test",
+      "dataset_index": "267",
+      "image_id": "9999938_00000_d_0000165.jpg",
+      "expression": "The white van is located at the top right corner of the image.",
+      "is_empty_target": false,
+      "instance_count": 1,
+      "union_area_px": 2397,
+      "bbox_xywh": [
+        897,
+        0,
+        44,
+        62
+      ],
+      "display_focus": "展示 baseline 对小目标响应不足，以及 Stage 2 TTA 的激活增强。",
+      "assets": {
+        "original": "cases/small_target/small_target_08/input.jpg",
+        "gt_mask": "cases/small_target/small_target_08/gt_union_mask.png",
+        "gt_overlay": "cases/small_target/small_target_08/gt_overlay.jpg",
+        "cris_mask": "cases/small_target/small_target_08/cris_mask.png",
+        "cris_heatmap": "cases/small_target/small_target_08/cris_heatmap.png",
+        "cris_overlay": "cases/small_target/small_target_08/cris_overlay.jpg",
+        "stage1_mask": "cases/small_target/small_target_08/stage1_mask.png",
+        "stage1_heatmap": "cases/small_target/small_target_08/stage1_heatmap.png",
+        "stage1_overlay": "cases/small_target/small_target_08/stage1_overlay.jpg",
+        "stage2_mask": "cases/small_target/small_target_08/stage2_mask.png",
+        "stage2_heatmap": "cases/small_target/small_target_08/stage2_heatmap.png",
+        "stage2_overlay": "cases/small_target/small_target_08/stage2_overlay.jpg",
+        "final_comparison": "cases/small_target/small_target_08/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.8456,
+          "dice": 0.9163,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.7864,
+          "dice": 0.8805,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999938_00000_d_0000165.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/267.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "small_target_09",
+      "category_id": "small_target",
+      "category_index": 9,
+      "category_total": 10,
+      "title": "小目标单实例",
+      "category": "Small Target",
+      "split": "test",
+      "dataset_index": "3206",
+      "image_id": "9999952_00000_d_0000090.jpg",
+      "expression": "The bus is located near the top center of the image.",
+      "is_empty_target": false,
+      "instance_count": 1,
+      "union_area_px": 1738,
+      "bbox_xywh": [
+        906,
+        42,
+        40,
+        57
+      ],
+      "display_focus": "展示 baseline 对小目标响应不足，以及 Stage 2 TTA 的激活增强。",
+      "assets": {
+        "original": "cases/small_target/small_target_09/input.jpg",
+        "gt_mask": "cases/small_target/small_target_09/gt_union_mask.png",
+        "gt_overlay": "cases/small_target/small_target_09/gt_overlay.jpg",
+        "cris_mask": "cases/small_target/small_target_09/cris_mask.png",
+        "cris_heatmap": "cases/small_target/small_target_09/cris_heatmap.png",
+        "cris_overlay": "cases/small_target/small_target_09/cris_overlay.jpg",
+        "stage1_mask": "cases/small_target/small_target_09/stage1_mask.png",
+        "stage1_heatmap": "cases/small_target/small_target_09/stage1_heatmap.png",
+        "stage1_overlay": "cases/small_target/small_target_09/stage1_overlay.jpg",
+        "stage2_mask": "cases/small_target/small_target_09/stage2_mask.png",
+        "stage2_heatmap": "cases/small_target/small_target_09/stage2_heatmap.png",
+        "stage2_overlay": "cases/small_target/small_target_09/stage2_overlay.jpg",
+        "final_comparison": "cases/small_target/small_target_09/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.7616,
+          "dice": 0.8647,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.7802,
+          "dice": 0.8766,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999952_00000_d_0000090.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/3206.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "small_target_10",
+      "category_id": "small_target",
+      "category_index": 10,
+      "category_total": 10,
+      "title": "小目标单实例",
+      "category": "Small Target",
+      "split": "test",
+      "dataset_index": "1274",
+      "image_id": "9999976_00000_d_0000019.jpg",
+      "expression": "The white van is on the road.",
+      "is_empty_target": false,
+      "instance_count": 1,
+      "union_area_px": 1777,
+      "bbox_xywh": [
+        438,
+        510,
+        31,
+        67
+      ],
+      "display_focus": "展示 baseline 对小目标响应不足，以及 Stage 2 TTA 的激活增强。",
+      "assets": {
+        "original": "cases/small_target/small_target_10/input.jpg",
+        "gt_mask": "cases/small_target/small_target_10/gt_union_mask.png",
+        "gt_overlay": "cases/small_target/small_target_10/gt_overlay.jpg",
+        "cris_mask": "cases/small_target/small_target_10/cris_mask.png",
+        "cris_heatmap": "cases/small_target/small_target_10/cris_heatmap.png",
+        "cris_overlay": "cases/small_target/small_target_10/cris_overlay.jpg",
+        "stage1_mask": "cases/small_target/small_target_10/stage1_mask.png",
+        "stage1_heatmap": "cases/small_target/small_target_10/stage1_heatmap.png",
+        "stage1_overlay": "cases/small_target/small_target_10/stage1_overlay.jpg",
+        "stage2_mask": "cases/small_target/small_target_10/stage2_mask.png",
+        "stage2_heatmap": "cases/small_target/small_target_10/stage2_heatmap.png",
+        "stage2_overlay": "cases/small_target/small_target_10/stage2_overlay.jpg",
+        "final_comparison": "cases/small_target/small_target_10/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.5939,
+          "dice": 0.7452,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.7797,
+          "dice": 0.8762,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999976_00000_d_0000019.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/1274.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "multi_instance_01",
+      "category_id": "multi_instance",
+      "category_index": 1,
+      "category_total": 10,
+      "title": "多实例集合",
+      "category": "Multi Instance",
+      "split": "test",
+      "dataset_index": "417",
+      "image_id": "9999952_00000_d_0000272.jpg",
+      "expression": "The car on the right side of the highway.",
+      "is_empty_target": false,
+      "instance_count": 2,
+      "union_area_px": 12419,
+      "bbox_xywh": [
+        1112,
+        293,
+        288,
+        166
+      ],
+      "display_focus": "展示同一句表达对应多个实例时，union mask 覆盖是否完整。",
+      "assets": {
+        "original": "cases/multi_instance/multi_instance_01/input.jpg",
+        "gt_mask": "cases/multi_instance/multi_instance_01/gt_union_mask.png",
+        "gt_overlay": "cases/multi_instance/multi_instance_01/gt_overlay.jpg",
+        "cris_mask": "cases/multi_instance/multi_instance_01/cris_mask.png",
+        "cris_heatmap": "cases/multi_instance/multi_instance_01/cris_heatmap.png",
+        "cris_overlay": "cases/multi_instance/multi_instance_01/cris_overlay.jpg",
+        "stage1_mask": "cases/multi_instance/multi_instance_01/stage1_mask.png",
+        "stage1_heatmap": "cases/multi_instance/multi_instance_01/stage1_heatmap.png",
+        "stage1_overlay": "cases/multi_instance/multi_instance_01/stage1_overlay.jpg",
+        "stage2_mask": "cases/multi_instance/multi_instance_01/stage2_mask.png",
+        "stage2_heatmap": "cases/multi_instance/multi_instance_01/stage2_heatmap.png",
+        "stage2_overlay": "cases/multi_instance/multi_instance_01/stage2_overlay.jpg",
+        "final_comparison": "cases/multi_instance/multi_instance_01/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.7086,
+          "dice": 0.8295,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.8078,
+          "dice": 0.8937,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999952_00000_d_0000272.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/417.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "multi_instance_02",
+      "category_id": "multi_instance",
+      "category_index": 2,
+      "category_total": 10,
+      "title": "多实例集合",
+      "category": "Multi Instance",
+      "split": "test",
+      "dataset_index": "3343",
+      "image_id": "9999986_00000_d_0000048.jpg",
+      "expression": "The blue trucks are located near the construction site.",
+      "is_empty_target": false,
+      "instance_count": 2,
+      "union_area_px": 8351,
+      "bbox_xywh": [
+        779,
+        41,
+        467,
+        293
+      ],
+      "display_focus": "展示同一句表达对应多个实例时，union mask 覆盖是否完整。",
+      "assets": {
+        "original": "cases/multi_instance/multi_instance_02/input.jpg",
+        "gt_mask": "cases/multi_instance/multi_instance_02/gt_union_mask.png",
+        "gt_overlay": "cases/multi_instance/multi_instance_02/gt_overlay.jpg",
+        "cris_mask": "cases/multi_instance/multi_instance_02/cris_mask.png",
+        "cris_heatmap": "cases/multi_instance/multi_instance_02/cris_heatmap.png",
+        "cris_overlay": "cases/multi_instance/multi_instance_02/cris_overlay.jpg",
+        "stage1_mask": "cases/multi_instance/multi_instance_02/stage1_mask.png",
+        "stage1_heatmap": "cases/multi_instance/multi_instance_02/stage1_heatmap.png",
+        "stage1_overlay": "cases/multi_instance/multi_instance_02/stage1_overlay.jpg",
+        "stage2_mask": "cases/multi_instance/multi_instance_02/stage2_mask.png",
+        "stage2_heatmap": "cases/multi_instance/multi_instance_02/stage2_heatmap.png",
+        "stage2_overlay": "cases/multi_instance/multi_instance_02/stage2_overlay.jpg",
+        "final_comparison": "cases/multi_instance/multi_instance_02/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.813,
+          "dice": 0.8969,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.7964,
+          "dice": 0.8866,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999986_00000_d_0000048.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/3343.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "multi_instance_03",
+      "category_id": "multi_instance",
+      "category_index": 3,
+      "category_total": 10,
+      "title": "多实例集合",
+      "category": "Multi Instance",
+      "split": "test",
+      "dataset_index": "1204",
+      "image_id": "9999938_00000_d_0000146.jpg",
+      "expression": "The white van and truck are parked near the building with a mural.",
+      "is_empty_target": false,
+      "instance_count": 2,
+      "union_area_px": 5863,
+      "bbox_xywh": [
+        218,
+        203,
+        312,
+        173
+      ],
+      "display_focus": "展示同一句表达对应多个实例时，union mask 覆盖是否完整。",
+      "assets": {
+        "original": "cases/multi_instance/multi_instance_03/input.jpg",
+        "gt_mask": "cases/multi_instance/multi_instance_03/gt_union_mask.png",
+        "gt_overlay": "cases/multi_instance/multi_instance_03/gt_overlay.jpg",
+        "cris_mask": "cases/multi_instance/multi_instance_03/cris_mask.png",
+        "cris_heatmap": "cases/multi_instance/multi_instance_03/cris_heatmap.png",
+        "cris_overlay": "cases/multi_instance/multi_instance_03/cris_overlay.jpg",
+        "stage1_mask": "cases/multi_instance/multi_instance_03/stage1_mask.png",
+        "stage1_heatmap": "cases/multi_instance/multi_instance_03/stage1_heatmap.png",
+        "stage1_overlay": "cases/multi_instance/multi_instance_03/stage1_overlay.jpg",
+        "stage2_mask": "cases/multi_instance/multi_instance_03/stage2_mask.png",
+        "stage2_heatmap": "cases/multi_instance/multi_instance_03/stage2_heatmap.png",
+        "stage2_overlay": "cases/multi_instance/multi_instance_03/stage2_overlay.jpg",
+        "final_comparison": "cases/multi_instance/multi_instance_03/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.7672,
+          "dice": 0.8683,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.7682,
+          "dice": 0.8689,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999938_00000_d_0000146.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/1204.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "multi_instance_04",
+      "category_id": "multi_instance",
+      "category_index": 4,
+      "category_total": 10,
+      "title": "多实例集合",
+      "category": "Multi Instance",
+      "split": "test",
+      "dataset_index": "3326",
+      "image_id": "9999938_00000_d_0000497.jpg",
+      "expression": "The buses are located near the bottom right of the image.",
+      "is_empty_target": false,
+      "instance_count": 2,
+      "union_area_px": 10653,
+      "bbox_xywh": [
+        1035,
+        424,
+        151,
+        265
+      ],
+      "display_focus": "展示同一句表达对应多个实例时，union mask 覆盖是否完整。",
+      "assets": {
+        "original": "cases/multi_instance/multi_instance_04/input.jpg",
+        "gt_mask": "cases/multi_instance/multi_instance_04/gt_union_mask.png",
+        "gt_overlay": "cases/multi_instance/multi_instance_04/gt_overlay.jpg",
+        "cris_mask": "cases/multi_instance/multi_instance_04/cris_mask.png",
+        "cris_heatmap": "cases/multi_instance/multi_instance_04/cris_heatmap.png",
+        "cris_overlay": "cases/multi_instance/multi_instance_04/cris_overlay.jpg",
+        "stage1_mask": "cases/multi_instance/multi_instance_04/stage1_mask.png",
+        "stage1_heatmap": "cases/multi_instance/multi_instance_04/stage1_heatmap.png",
+        "stage1_overlay": "cases/multi_instance/multi_instance_04/stage1_overlay.jpg",
+        "stage2_mask": "cases/multi_instance/multi_instance_04/stage2_mask.png",
+        "stage2_heatmap": "cases/multi_instance/multi_instance_04/stage2_heatmap.png",
+        "stage2_overlay": "cases/multi_instance/multi_instance_04/stage2_overlay.jpg",
+        "final_comparison": "cases/multi_instance/multi_instance_04/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.5123,
+          "dice": 0.6775,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.75,
+          "dice": 0.8572,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999938_00000_d_0000497.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/3326.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "multi_instance_05",
+      "category_id": "multi_instance",
+      "category_index": 5,
+      "category_total": 10,
+      "title": "多实例集合",
+      "category": "Multi Instance",
+      "split": "test",
+      "dataset_index": "2157",
+      "image_id": "9999952_00000_d_0000311.jpg",
+      "expression": "The truck near the bottom left corner of the image.",
+      "is_empty_target": false,
+      "instance_count": 2,
+      "union_area_px": 15736,
+      "bbox_xywh": [
+        23,
+        619,
+        332,
+        169
+      ],
+      "display_focus": "展示同一句表达对应多个实例时，union mask 覆盖是否完整。",
+      "assets": {
+        "original": "cases/multi_instance/multi_instance_05/input.jpg",
+        "gt_mask": "cases/multi_instance/multi_instance_05/gt_union_mask.png",
+        "gt_overlay": "cases/multi_instance/multi_instance_05/gt_overlay.jpg",
+        "cris_mask": "cases/multi_instance/multi_instance_05/cris_mask.png",
+        "cris_heatmap": "cases/multi_instance/multi_instance_05/cris_heatmap.png",
+        "cris_overlay": "cases/multi_instance/multi_instance_05/cris_overlay.jpg",
+        "stage1_mask": "cases/multi_instance/multi_instance_05/stage1_mask.png",
+        "stage1_heatmap": "cases/multi_instance/multi_instance_05/stage1_heatmap.png",
+        "stage1_overlay": "cases/multi_instance/multi_instance_05/stage1_overlay.jpg",
+        "stage2_mask": "cases/multi_instance/multi_instance_05/stage2_mask.png",
+        "stage2_heatmap": "cases/multi_instance/multi_instance_05/stage2_heatmap.png",
+        "stage2_overlay": "cases/multi_instance/multi_instance_05/stage2_overlay.jpg",
+        "final_comparison": "cases/multi_instance/multi_instance_05/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.2102,
+          "dice": 0.3473,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.7483,
+          "dice": 0.8561,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999952_00000_d_0000311.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/2157.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "multi_instance_06",
+      "category_id": "multi_instance",
+      "category_index": 6,
+      "category_total": 10,
+      "title": "多实例集合",
+      "category": "Multi Instance",
+      "split": "test",
+      "dataset_index": "2020",
+      "image_id": "9999952_00000_d_0000142.jpg",
+      "expression": "The truck is parked near the curved road at the bottom left of the image.",
+      "is_empty_target": false,
+      "instance_count": 6,
+      "union_area_px": 21899,
+      "bbox_xywh": [
+        70,
+        483,
+        309,
+        182
+      ],
+      "display_focus": "展示同一句表达对应多个实例时，union mask 覆盖是否完整。",
+      "assets": {
+        "original": "cases/multi_instance/multi_instance_06/input.jpg",
+        "gt_mask": "cases/multi_instance/multi_instance_06/gt_union_mask.png",
+        "gt_overlay": "cases/multi_instance/multi_instance_06/gt_overlay.jpg",
+        "cris_mask": "cases/multi_instance/multi_instance_06/cris_mask.png",
+        "cris_heatmap": "cases/multi_instance/multi_instance_06/cris_heatmap.png",
+        "cris_overlay": "cases/multi_instance/multi_instance_06/cris_overlay.jpg",
+        "stage1_mask": "cases/multi_instance/multi_instance_06/stage1_mask.png",
+        "stage1_heatmap": "cases/multi_instance/multi_instance_06/stage1_heatmap.png",
+        "stage1_overlay": "cases/multi_instance/multi_instance_06/stage1_overlay.jpg",
+        "stage2_mask": "cases/multi_instance/multi_instance_06/stage2_mask.png",
+        "stage2_heatmap": "cases/multi_instance/multi_instance_06/stage2_heatmap.png",
+        "stage2_overlay": "cases/multi_instance/multi_instance_06/stage2_overlay.jpg",
+        "final_comparison": "cases/multi_instance/multi_instance_06/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.6919,
+          "dice": 0.8179,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.748,
+          "dice": 0.8558,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999952_00000_d_0000142.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/2020.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "multi_instance_07",
+      "category_id": "multi_instance",
+      "category_index": 7,
+      "category_total": 10,
+      "title": "多实例集合",
+      "category": "Multi Instance",
+      "split": "test",
+      "dataset_index": "584",
+      "image_id": "9999952_00000_d_0000263.jpg",
+      "expression": "The car near the bottom center of the image.",
+      "is_empty_target": false,
+      "instance_count": 2,
+      "union_area_px": 5710,
+      "bbox_xywh": [
+        494,
+        529,
+        249,
+        255
+      ],
+      "display_focus": "展示同一句表达对应多个实例时，union mask 覆盖是否完整。",
+      "assets": {
+        "original": "cases/multi_instance/multi_instance_07/input.jpg",
+        "gt_mask": "cases/multi_instance/multi_instance_07/gt_union_mask.png",
+        "gt_overlay": "cases/multi_instance/multi_instance_07/gt_overlay.jpg",
+        "cris_mask": "cases/multi_instance/multi_instance_07/cris_mask.png",
+        "cris_heatmap": "cases/multi_instance/multi_instance_07/cris_heatmap.png",
+        "cris_overlay": "cases/multi_instance/multi_instance_07/cris_overlay.jpg",
+        "stage1_mask": "cases/multi_instance/multi_instance_07/stage1_mask.png",
+        "stage1_heatmap": "cases/multi_instance/multi_instance_07/stage1_heatmap.png",
+        "stage1_overlay": "cases/multi_instance/multi_instance_07/stage1_overlay.jpg",
+        "stage2_mask": "cases/multi_instance/multi_instance_07/stage2_mask.png",
+        "stage2_heatmap": "cases/multi_instance/multi_instance_07/stage2_heatmap.png",
+        "stage2_overlay": "cases/multi_instance/multi_instance_07/stage2_overlay.jpg",
+        "final_comparison": "cases/multi_instance/multi_instance_07/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.201,
+          "dice": 0.3348,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.7437,
+          "dice": 0.853,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999952_00000_d_0000263.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/584.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "multi_instance_08",
+      "category_id": "multi_instance",
+      "category_index": 8,
+      "category_total": 10,
+      "title": "多实例集合",
+      "category": "Multi Instance",
+      "split": "test",
+      "dataset_index": "1036",
+      "image_id": "9999993_00000_d_0000006.jpg",
+      "expression": "The white trucks on the right side of the street.",
+      "is_empty_target": false,
+      "instance_count": 2,
+      "union_area_px": 7952,
+      "bbox_xywh": [
+        715,
+        588,
+        195,
+        217
+      ],
+      "display_focus": "展示同一句表达对应多个实例时，union mask 覆盖是否完整。",
+      "assets": {
+        "original": "cases/multi_instance/multi_instance_08/input.jpg",
+        "gt_mask": "cases/multi_instance/multi_instance_08/gt_union_mask.png",
+        "gt_overlay": "cases/multi_instance/multi_instance_08/gt_overlay.jpg",
+        "cris_mask": "cases/multi_instance/multi_instance_08/cris_mask.png",
+        "cris_heatmap": "cases/multi_instance/multi_instance_08/cris_heatmap.png",
+        "cris_overlay": "cases/multi_instance/multi_instance_08/cris_overlay.jpg",
+        "stage1_mask": "cases/multi_instance/multi_instance_08/stage1_mask.png",
+        "stage1_heatmap": "cases/multi_instance/multi_instance_08/stage1_heatmap.png",
+        "stage1_overlay": "cases/multi_instance/multi_instance_08/stage1_overlay.jpg",
+        "stage2_mask": "cases/multi_instance/multi_instance_08/stage2_mask.png",
+        "stage2_heatmap": "cases/multi_instance/multi_instance_08/stage2_heatmap.png",
+        "stage2_overlay": "cases/multi_instance/multi_instance_08/stage2_overlay.jpg",
+        "final_comparison": "cases/multi_instance/multi_instance_08/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.5615,
+          "dice": 0.7192,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.7256,
+          "dice": 0.841,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999993_00000_d_0000006.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/1036.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "multi_instance_09",
+      "category_id": "multi_instance",
+      "category_index": 9,
+      "category_total": 10,
+      "title": "多实例集合",
+      "category": "Multi Instance",
+      "split": "test",
+      "dataset_index": "2162",
+      "image_id": "0000370_00000_d_0000250.jpg",
+      "expression": "The red trucks travel on the highway overpass.",
+      "is_empty_target": false,
+      "instance_count": 2,
+      "union_area_px": 7010,
+      "bbox_xywh": [
+        631,
+        251,
+        150,
+        66
+      ],
+      "display_focus": "展示同一句表达对应多个实例时，union mask 覆盖是否完整。",
+      "assets": {
+        "original": "cases/multi_instance/multi_instance_09/input.jpg",
+        "gt_mask": "cases/multi_instance/multi_instance_09/gt_union_mask.png",
+        "gt_overlay": "cases/multi_instance/multi_instance_09/gt_overlay.jpg",
+        "cris_mask": "cases/multi_instance/multi_instance_09/cris_mask.png",
+        "cris_heatmap": "cases/multi_instance/multi_instance_09/cris_heatmap.png",
+        "cris_overlay": "cases/multi_instance/multi_instance_09/cris_overlay.jpg",
+        "stage1_mask": "cases/multi_instance/multi_instance_09/stage1_mask.png",
+        "stage1_heatmap": "cases/multi_instance/multi_instance_09/stage1_heatmap.png",
+        "stage1_overlay": "cases/multi_instance/multi_instance_09/stage1_overlay.jpg",
+        "stage2_mask": "cases/multi_instance/multi_instance_09/stage2_mask.png",
+        "stage2_heatmap": "cases/multi_instance/multi_instance_09/stage2_heatmap.png",
+        "stage2_overlay": "cases/multi_instance/multi_instance_09/stage2_overlay.jpg",
+        "final_comparison": "cases/multi_instance/multi_instance_09/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.6194,
+          "dice": 0.765,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.7241,
+          "dice": 0.84,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/0000370_00000_d_0000250.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/2162.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "multi_instance_10",
+      "category_id": "multi_instance",
+      "category_index": 10,
+      "category_total": 10,
+      "title": "多实例集合",
+      "category": "Multi Instance",
+      "split": "test",
+      "dataset_index": "190",
+      "image_id": "9999952_00000_d_0000041.jpg",
+      "expression": "The truck on the elevated section of the highway.",
+      "is_empty_target": false,
+      "instance_count": 2,
+      "union_area_px": 4310,
+      "bbox_xywh": [
+        432,
+        289,
+        336,
+        170
+      ],
+      "display_focus": "展示同一句表达对应多个实例时，union mask 覆盖是否完整。",
+      "assets": {
+        "original": "cases/multi_instance/multi_instance_10/input.jpg",
+        "gt_mask": "cases/multi_instance/multi_instance_10/gt_union_mask.png",
+        "gt_overlay": "cases/multi_instance/multi_instance_10/gt_overlay.jpg",
+        "cris_mask": "cases/multi_instance/multi_instance_10/cris_mask.png",
+        "cris_heatmap": "cases/multi_instance/multi_instance_10/cris_heatmap.png",
+        "cris_overlay": "cases/multi_instance/multi_instance_10/cris_overlay.jpg",
+        "stage1_mask": "cases/multi_instance/multi_instance_10/stage1_mask.png",
+        "stage1_heatmap": "cases/multi_instance/multi_instance_10/stage1_heatmap.png",
+        "stage1_overlay": "cases/multi_instance/multi_instance_10/stage1_overlay.jpg",
+        "stage2_mask": "cases/multi_instance/multi_instance_10/stage2_mask.png",
+        "stage2_heatmap": "cases/multi_instance/multi_instance_10/stage2_heatmap.png",
+        "stage2_overlay": "cases/multi_instance/multi_instance_10/stage2_overlay.jpg",
+        "final_comparison": "cases/multi_instance/multi_instance_10/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.6452,
+          "dice": 0.7843,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.7216,
+          "dice": 0.8383,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999952_00000_d_0000041.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/190.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "spatial_relation_01",
+      "category_id": "spatial_relation",
+      "category_index": 1,
+      "category_total": 10,
+      "title": "空间关系表达",
+      "category": "Spatial Relation",
+      "split": "test",
+      "dataset_index": "2895",
+      "image_id": "0000006_01111_d_0000003.jpg",
+      "expression": "The white cars park around the central green area.",
+      "is_empty_target": false,
+      "instance_count": 6,
+      "union_area_px": 39886,
+      "bbox_xywh": [
+        581,
+        156,
+        594,
+        423
+      ],
+      "display_focus": "展示模型对 near、around、left、right 等空间约束的理解。",
+      "assets": {
+        "original": "cases/spatial_relation/spatial_relation_01/input.jpg",
+        "gt_mask": "cases/spatial_relation/spatial_relation_01/gt_union_mask.png",
+        "gt_overlay": "cases/spatial_relation/spatial_relation_01/gt_overlay.jpg",
+        "cris_mask": "cases/spatial_relation/spatial_relation_01/cris_mask.png",
+        "cris_heatmap": "cases/spatial_relation/spatial_relation_01/cris_heatmap.png",
+        "cris_overlay": "cases/spatial_relation/spatial_relation_01/cris_overlay.jpg",
+        "stage1_mask": "cases/spatial_relation/spatial_relation_01/stage1_mask.png",
+        "stage1_heatmap": "cases/spatial_relation/spatial_relation_01/stage1_heatmap.png",
+        "stage1_overlay": "cases/spatial_relation/spatial_relation_01/stage1_overlay.jpg",
+        "stage2_mask": "cases/spatial_relation/spatial_relation_01/stage2_mask.png",
+        "stage2_heatmap": "cases/spatial_relation/spatial_relation_01/stage2_heatmap.png",
+        "stage2_overlay": "cases/spatial_relation/spatial_relation_01/stage2_overlay.jpg",
+        "final_comparison": "cases/spatial_relation/spatial_relation_01/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.6163,
+          "dice": 0.7626,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.7557,
+          "dice": 0.8608,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.7915,
+          "dice": 0.8836,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/0000006_01111_d_0000003.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/2895.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "spatial_relation_02",
+      "category_id": "spatial_relation",
+      "category_index": 2,
+      "category_total": 10,
+      "title": "空间关系表达",
+      "category": "Spatial Relation",
+      "split": "test",
+      "dataset_index": "3356",
+      "image_id": "9999938_00000_d_0000091.jpg",
+      "expression": "The buses on the bottom right of the street.",
+      "is_empty_target": false,
+      "instance_count": 1,
+      "union_area_px": 9131,
+      "bbox_xywh": [
+        1227,
+        733,
+        173,
+        55
+      ],
+      "display_focus": "展示模型对 near、around、left、right 等空间约束的理解。",
+      "assets": {
+        "original": "cases/spatial_relation/spatial_relation_02/input.jpg",
+        "gt_mask": "cases/spatial_relation/spatial_relation_02/gt_union_mask.png",
+        "gt_overlay": "cases/spatial_relation/spatial_relation_02/gt_overlay.jpg",
+        "cris_mask": "cases/spatial_relation/spatial_relation_02/cris_mask.png",
+        "cris_heatmap": "cases/spatial_relation/spatial_relation_02/cris_heatmap.png",
+        "cris_overlay": "cases/spatial_relation/spatial_relation_02/cris_overlay.jpg",
+        "stage1_mask": "cases/spatial_relation/spatial_relation_02/stage1_mask.png",
+        "stage1_heatmap": "cases/spatial_relation/spatial_relation_02/stage1_heatmap.png",
+        "stage1_overlay": "cases/spatial_relation/spatial_relation_02/stage1_overlay.jpg",
+        "stage2_mask": "cases/spatial_relation/spatial_relation_02/stage2_mask.png",
+        "stage2_heatmap": "cases/spatial_relation/spatial_relation_02/stage2_heatmap.png",
+        "stage2_overlay": "cases/spatial_relation/spatial_relation_02/stage2_overlay.jpg",
+        "final_comparison": "cases/spatial_relation/spatial_relation_02/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.1586,
+          "dice": 0.2738,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.9031,
+          "dice": 0.9491,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999938_00000_d_0000091.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/3356.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "spatial_relation_03",
+      "category_id": "spatial_relation",
+      "category_index": 3,
+      "category_total": 10,
+      "title": "空间关系表达",
+      "category": "Spatial Relation",
+      "split": "test",
+      "dataset_index": "2185",
+      "image_id": "9999938_00000_d_0000085.jpg",
+      "expression": "The white buses are parked near the buildings.",
+      "is_empty_target": false,
+      "instance_count": 1,
+      "union_area_px": 10617,
+      "bbox_xywh": [
+        408,
+        202,
+        97,
+        166
+      ],
+      "display_focus": "展示模型对 near、around、left、right 等空间约束的理解。",
+      "assets": {
+        "original": "cases/spatial_relation/spatial_relation_03/input.jpg",
+        "gt_mask": "cases/spatial_relation/spatial_relation_03/gt_union_mask.png",
+        "gt_overlay": "cases/spatial_relation/spatial_relation_03/gt_overlay.jpg",
+        "cris_mask": "cases/spatial_relation/spatial_relation_03/cris_mask.png",
+        "cris_heatmap": "cases/spatial_relation/spatial_relation_03/cris_heatmap.png",
+        "cris_overlay": "cases/spatial_relation/spatial_relation_03/cris_overlay.jpg",
+        "stage1_mask": "cases/spatial_relation/spatial_relation_03/stage1_mask.png",
+        "stage1_heatmap": "cases/spatial_relation/spatial_relation_03/stage1_heatmap.png",
+        "stage1_overlay": "cases/spatial_relation/spatial_relation_03/stage1_overlay.jpg",
+        "stage2_mask": "cases/spatial_relation/spatial_relation_03/stage2_mask.png",
+        "stage2_heatmap": "cases/spatial_relation/spatial_relation_03/stage2_heatmap.png",
+        "stage2_overlay": "cases/spatial_relation/spatial_relation_03/stage2_overlay.jpg",
+        "final_comparison": "cases/spatial_relation/spatial_relation_03/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.7947,
+          "dice": 0.8856,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.9004,
+          "dice": 0.9476,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999938_00000_d_0000085.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/2185.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "spatial_relation_04",
+      "category_id": "spatial_relation",
+      "category_index": 4,
+      "category_total": 10,
+      "title": "空间关系表达",
+      "category": "Spatial Relation",
+      "split": "test",
+      "dataset_index": "23",
+      "image_id": "0000074_08777_d_0000017.jpg",
+      "expression": "The bus is located in the middle of the street.",
+      "is_empty_target": false,
+      "instance_count": 1,
+      "union_area_px": 54206,
+      "bbox_xywh": [
+        812,
+        748,
+        236,
+        298
+      ],
+      "display_focus": "展示模型对 near、around、left、right 等空间约束的理解。",
+      "assets": {
+        "original": "cases/spatial_relation/spatial_relation_04/input.jpg",
+        "gt_mask": "cases/spatial_relation/spatial_relation_04/gt_union_mask.png",
+        "gt_overlay": "cases/spatial_relation/spatial_relation_04/gt_overlay.jpg",
+        "cris_mask": "cases/spatial_relation/spatial_relation_04/cris_mask.png",
+        "cris_heatmap": "cases/spatial_relation/spatial_relation_04/cris_heatmap.png",
+        "cris_overlay": "cases/spatial_relation/spatial_relation_04/cris_overlay.jpg",
+        "stage1_mask": "cases/spatial_relation/spatial_relation_04/stage1_mask.png",
+        "stage1_heatmap": "cases/spatial_relation/spatial_relation_04/stage1_heatmap.png",
+        "stage1_overlay": "cases/spatial_relation/spatial_relation_04/stage1_overlay.jpg",
+        "stage2_mask": "cases/spatial_relation/spatial_relation_04/stage2_mask.png",
+        "stage2_heatmap": "cases/spatial_relation/spatial_relation_04/stage2_heatmap.png",
+        "stage2_overlay": "cases/spatial_relation/spatial_relation_04/stage2_overlay.jpg",
+        "final_comparison": "cases/spatial_relation/spatial_relation_04/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.8287,
+          "dice": 0.9063,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.8937,
+          "dice": 0.9439,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/0000074_08777_d_0000017.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/23.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "spatial_relation_05",
+      "category_id": "spatial_relation",
+      "category_index": 5,
+      "category_total": 10,
+      "title": "空间关系表达",
+      "category": "Spatial Relation",
+      "split": "test",
+      "dataset_index": "2252",
+      "image_id": "9999952_00000_d_0000222.jpg",
+      "expression": "The bus is located near the bottom right of the image.",
+      "is_empty_target": false,
+      "instance_count": 1,
+      "union_area_px": 18616,
+      "bbox_xywh": [
+        952,
+        537,
+        233,
+        171
+      ],
+      "display_focus": "展示模型对 near、around、left、right 等空间约束的理解。",
+      "assets": {
+        "original": "cases/spatial_relation/spatial_relation_05/input.jpg",
+        "gt_mask": "cases/spatial_relation/spatial_relation_05/gt_union_mask.png",
+        "gt_overlay": "cases/spatial_relation/spatial_relation_05/gt_overlay.jpg",
+        "cris_mask": "cases/spatial_relation/spatial_relation_05/cris_mask.png",
+        "cris_heatmap": "cases/spatial_relation/spatial_relation_05/cris_heatmap.png",
+        "cris_overlay": "cases/spatial_relation/spatial_relation_05/cris_overlay.jpg",
+        "stage1_mask": "cases/spatial_relation/spatial_relation_05/stage1_mask.png",
+        "stage1_heatmap": "cases/spatial_relation/spatial_relation_05/stage1_heatmap.png",
+        "stage1_overlay": "cases/spatial_relation/spatial_relation_05/stage1_overlay.jpg",
+        "stage2_mask": "cases/spatial_relation/spatial_relation_05/stage2_mask.png",
+        "stage2_heatmap": "cases/spatial_relation/spatial_relation_05/stage2_heatmap.png",
+        "stage2_overlay": "cases/spatial_relation/spatial_relation_05/stage2_overlay.jpg",
+        "final_comparison": "cases/spatial_relation/spatial_relation_05/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.1677,
+          "dice": 0.2872,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.8862,
+          "dice": 0.9397,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999952_00000_d_0000222.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/2252.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "spatial_relation_06",
+      "category_id": "spatial_relation",
+      "category_index": 6,
+      "category_total": 10,
+      "title": "空间关系表达",
+      "category": "Spatial Relation",
+      "split": "test",
+      "dataset_index": "2010",
+      "image_id": "9999952_00000_d_0000190.jpg",
+      "expression": "The bus is located near the bottom left corner of the image.",
+      "is_empty_target": false,
+      "instance_count": 1,
+      "union_area_px": 10664,
+      "bbox_xywh": [
+        0,
+        573,
+        172,
+        111
+      ],
+      "display_focus": "展示模型对 near、around、left、right 等空间约束的理解。",
+      "assets": {
+        "original": "cases/spatial_relation/spatial_relation_06/input.jpg",
+        "gt_mask": "cases/spatial_relation/spatial_relation_06/gt_union_mask.png",
+        "gt_overlay": "cases/spatial_relation/spatial_relation_06/gt_overlay.jpg",
+        "cris_mask": "cases/spatial_relation/spatial_relation_06/cris_mask.png",
+        "cris_heatmap": "cases/spatial_relation/spatial_relation_06/cris_heatmap.png",
+        "cris_overlay": "cases/spatial_relation/spatial_relation_06/cris_overlay.jpg",
+        "stage1_mask": "cases/spatial_relation/spatial_relation_06/stage1_mask.png",
+        "stage1_heatmap": "cases/spatial_relation/spatial_relation_06/stage1_heatmap.png",
+        "stage1_overlay": "cases/spatial_relation/spatial_relation_06/stage1_overlay.jpg",
+        "stage2_mask": "cases/spatial_relation/spatial_relation_06/stage2_mask.png",
+        "stage2_heatmap": "cases/spatial_relation/spatial_relation_06/stage2_heatmap.png",
+        "stage2_overlay": "cases/spatial_relation/spatial_relation_06/stage2_overlay.jpg",
+        "final_comparison": "cases/spatial_relation/spatial_relation_06/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.7037,
+          "dice": 0.8261,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.8837,
+          "dice": 0.9382,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999952_00000_d_0000190.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/2010.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "spatial_relation_07",
+      "category_id": "spatial_relation",
+      "category_index": 7,
+      "category_total": 10,
+      "title": "空间关系表达",
+      "category": "Spatial Relation",
+      "split": "test",
+      "dataset_index": "164",
+      "image_id": "9999938_00000_d_0000086.jpg",
+      "expression": "The white bus near the bottom-left corner.",
+      "is_empty_target": false,
+      "instance_count": 1,
+      "union_area_px": 12106,
+      "bbox_xywh": [
+        363,
+        625,
+        115,
+        163
+      ],
+      "display_focus": "展示模型对 near、around、left、right 等空间约束的理解。",
+      "assets": {
+        "original": "cases/spatial_relation/spatial_relation_07/input.jpg",
+        "gt_mask": "cases/spatial_relation/spatial_relation_07/gt_union_mask.png",
+        "gt_overlay": "cases/spatial_relation/spatial_relation_07/gt_overlay.jpg",
+        "cris_mask": "cases/spatial_relation/spatial_relation_07/cris_mask.png",
+        "cris_heatmap": "cases/spatial_relation/spatial_relation_07/cris_heatmap.png",
+        "cris_overlay": "cases/spatial_relation/spatial_relation_07/cris_overlay.jpg",
+        "stage1_mask": "cases/spatial_relation/spatial_relation_07/stage1_mask.png",
+        "stage1_heatmap": "cases/spatial_relation/spatial_relation_07/stage1_heatmap.png",
+        "stage1_overlay": "cases/spatial_relation/spatial_relation_07/stage1_overlay.jpg",
+        "stage2_mask": "cases/spatial_relation/spatial_relation_07/stage2_mask.png",
+        "stage2_heatmap": "cases/spatial_relation/spatial_relation_07/stage2_heatmap.png",
+        "stage2_overlay": "cases/spatial_relation/spatial_relation_07/stage2_overlay.jpg",
+        "final_comparison": "cases/spatial_relation/spatial_relation_07/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.7039,
+          "dice": 0.8262,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.8757,
+          "dice": 0.9338,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999938_00000_d_0000086.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/164.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "spatial_relation_08",
+      "category_id": "spatial_relation",
+      "category_index": 8,
+      "category_total": 10,
+      "title": "空间关系表达",
+      "category": "Spatial Relation",
+      "split": "test",
+      "dataset_index": "1644",
+      "image_id": "0000006_04309_d_0000011.jpg",
+      "expression": "The green trucks are located on the right side of the image.",
+      "is_empty_target": false,
+      "instance_count": 1,
+      "union_area_px": 13613,
+      "bbox_xywh": [
+        1227,
+        116,
+        133,
+        159
+      ],
+      "display_focus": "展示模型对 near、around、left、right 等空间约束的理解。",
+      "assets": {
+        "original": "cases/spatial_relation/spatial_relation_08/input.jpg",
+        "gt_mask": "cases/spatial_relation/spatial_relation_08/gt_union_mask.png",
+        "gt_overlay": "cases/spatial_relation/spatial_relation_08/gt_overlay.jpg",
+        "cris_mask": "cases/spatial_relation/spatial_relation_08/cris_mask.png",
+        "cris_heatmap": "cases/spatial_relation/spatial_relation_08/cris_heatmap.png",
+        "cris_overlay": "cases/spatial_relation/spatial_relation_08/cris_overlay.jpg",
+        "stage1_mask": "cases/spatial_relation/spatial_relation_08/stage1_mask.png",
+        "stage1_heatmap": "cases/spatial_relation/spatial_relation_08/stage1_heatmap.png",
+        "stage1_overlay": "cases/spatial_relation/spatial_relation_08/stage1_overlay.jpg",
+        "stage2_mask": "cases/spatial_relation/spatial_relation_08/stage2_mask.png",
+        "stage2_heatmap": "cases/spatial_relation/spatial_relation_08/stage2_heatmap.png",
+        "stage2_overlay": "cases/spatial_relation/spatial_relation_08/stage2_overlay.jpg",
+        "final_comparison": "cases/spatial_relation/spatial_relation_08/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.4175,
+          "dice": 0.5891,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.8595,
+          "dice": 0.9244,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/0000006_04309_d_0000011.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/1644.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "spatial_relation_09",
+      "category_id": "spatial_relation",
+      "category_index": 9,
+      "category_total": 10,
+      "title": "空间关系表达",
+      "category": "Spatial Relation",
+      "split": "test",
+      "dataset_index": "3047",
+      "image_id": "9999938_00000_d_0000318.jpg",
+      "expression": "The yellow bus travels along the main road.",
+      "is_empty_target": false,
+      "instance_count": 1,
+      "union_area_px": 5006,
+      "bbox_xywh": [
+        756,
+        203,
+        87,
+        119
+      ],
+      "display_focus": "展示模型对 near、around、left、right 等空间约束的理解。",
+      "assets": {
+        "original": "cases/spatial_relation/spatial_relation_09/input.jpg",
+        "gt_mask": "cases/spatial_relation/spatial_relation_09/gt_union_mask.png",
+        "gt_overlay": "cases/spatial_relation/spatial_relation_09/gt_overlay.jpg",
+        "cris_mask": "cases/spatial_relation/spatial_relation_09/cris_mask.png",
+        "cris_heatmap": "cases/spatial_relation/spatial_relation_09/cris_heatmap.png",
+        "cris_overlay": "cases/spatial_relation/spatial_relation_09/cris_overlay.jpg",
+        "stage1_mask": "cases/spatial_relation/spatial_relation_09/stage1_mask.png",
+        "stage1_heatmap": "cases/spatial_relation/spatial_relation_09/stage1_heatmap.png",
+        "stage1_overlay": "cases/spatial_relation/spatial_relation_09/stage1_overlay.jpg",
+        "stage2_mask": "cases/spatial_relation/spatial_relation_09/stage2_mask.png",
+        "stage2_heatmap": "cases/spatial_relation/spatial_relation_09/stage2_heatmap.png",
+        "stage2_overlay": "cases/spatial_relation/spatial_relation_09/stage2_overlay.jpg",
+        "final_comparison": "cases/spatial_relation/spatial_relation_09/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.7311,
+          "dice": 0.8447,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.8551,
+          "dice": 0.9219,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999938_00000_d_0000318.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/3047.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "spatial_relation_10",
+      "category_id": "spatial_relation",
+      "category_index": 10,
+      "category_total": 10,
+      "title": "空间关系表达",
+      "category": "Spatial Relation",
+      "split": "test",
+      "dataset_index": "2810",
+      "image_id": "9999952_00000_d_0000251.jpg",
+      "expression": "The bus is located near the bottom left of the image.",
+      "is_empty_target": false,
+      "instance_count": 1,
+      "union_area_px": 5787,
+      "bbox_xywh": [
+        395,
+        510,
+        68,
+        123
+      ],
+      "display_focus": "展示模型对 near、around、left、right 等空间约束的理解。",
+      "assets": {
+        "original": "cases/spatial_relation/spatial_relation_10/input.jpg",
+        "gt_mask": "cases/spatial_relation/spatial_relation_10/gt_union_mask.png",
+        "gt_overlay": "cases/spatial_relation/spatial_relation_10/gt_overlay.jpg",
+        "cris_mask": "cases/spatial_relation/spatial_relation_10/cris_mask.png",
+        "cris_heatmap": "cases/spatial_relation/spatial_relation_10/cris_heatmap.png",
+        "cris_overlay": "cases/spatial_relation/spatial_relation_10/cris_overlay.jpg",
+        "stage1_mask": "cases/spatial_relation/spatial_relation_10/stage1_mask.png",
+        "stage1_heatmap": "cases/spatial_relation/spatial_relation_10/stage1_heatmap.png",
+        "stage1_overlay": "cases/spatial_relation/spatial_relation_10/stage1_overlay.jpg",
+        "stage2_mask": "cases/spatial_relation/spatial_relation_10/stage2_mask.png",
+        "stage2_heatmap": "cases/spatial_relation/spatial_relation_10/stage2_heatmap.png",
+        "stage2_overlay": "cases/spatial_relation/spatial_relation_10/stage2_overlay.jpg",
+        "final_comparison": "cases/spatial_relation/spatial_relation_10/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.7914,
+          "dice": 0.8835,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.848,
+          "dice": 0.9177,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999952_00000_d_0000251.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/2810.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "high_density_01",
+      "category_id": "high_density",
+      "category_index": 1,
+      "category_total": 10,
+      "title": "高密度目标",
+      "category": "High Density",
+      "split": "test",
+      "dataset_index": "2259",
+      "image_id": "0000127_00265_d_0000120.jpg",
+      "expression": "The white cars in the image.",
+      "is_empty_target": false,
+      "instance_count": 34,
+      "union_area_px": 112198,
+      "bbox_xywh": [
+        202,
+        139,
+        1376,
+        941
+      ],
+      "display_focus": "展示密集目标、遮挡和复杂背景下的预测稳定性。",
+      "assets": {
+        "original": "cases/high_density/high_density_01/input.jpg",
+        "gt_mask": "cases/high_density/high_density_01/gt_union_mask.png",
+        "gt_overlay": "cases/high_density/high_density_01/gt_overlay.jpg",
+        "cris_mask": "cases/high_density/high_density_01/cris_mask.png",
+        "cris_heatmap": "cases/high_density/high_density_01/cris_heatmap.png",
+        "cris_overlay": "cases/high_density/high_density_01/cris_overlay.jpg",
+        "stage1_mask": "cases/high_density/high_density_01/stage1_mask.png",
+        "stage1_heatmap": "cases/high_density/high_density_01/stage1_heatmap.png",
+        "stage1_overlay": "cases/high_density/high_density_01/stage1_overlay.jpg",
+        "stage2_mask": "cases/high_density/high_density_01/stage2_mask.png",
+        "stage2_heatmap": "cases/high_density/high_density_01/stage2_heatmap.png",
+        "stage2_overlay": "cases/high_density/high_density_01/stage2_overlay.jpg",
+        "final_comparison": "cases/high_density/high_density_01/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.4634,
+          "dice": 0.6333,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.5377,
+          "dice": 0.6994,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.6335,
+          "dice": 0.7757,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/0000127_00265_d_0000120.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/2259.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "high_density_02",
+      "category_id": "high_density",
+      "category_index": 2,
+      "category_total": 10,
+      "title": "高密度目标",
+      "category": "High Density",
+      "split": "test",
+      "dataset_index": "610",
+      "image_id": "0000272_02000_d_0000005.jpg",
+      "expression": "The white cars park on both sides of the street.",
+      "is_empty_target": false,
+      "instance_count": 30,
+      "union_area_px": 59147,
+      "bbox_xywh": [
+        110,
+        4,
+        1170,
+        761
+      ],
+      "display_focus": "展示密集目标、遮挡和复杂背景下的预测稳定性。",
+      "assets": {
+        "original": "cases/high_density/high_density_02/input.jpg",
+        "gt_mask": "cases/high_density/high_density_02/gt_union_mask.png",
+        "gt_overlay": "cases/high_density/high_density_02/gt_overlay.jpg",
+        "cris_mask": "cases/high_density/high_density_02/cris_mask.png",
+        "cris_heatmap": "cases/high_density/high_density_02/cris_heatmap.png",
+        "cris_overlay": "cases/high_density/high_density_02/cris_overlay.jpg",
+        "stage1_mask": "cases/high_density/high_density_02/stage1_mask.png",
+        "stage1_heatmap": "cases/high_density/high_density_02/stage1_heatmap.png",
+        "stage1_overlay": "cases/high_density/high_density_02/stage1_overlay.jpg",
+        "stage2_mask": "cases/high_density/high_density_02/stage2_mask.png",
+        "stage2_heatmap": "cases/high_density/high_density_02/stage2_heatmap.png",
+        "stage2_overlay": "cases/high_density/high_density_02/stage2_overlay.jpg",
+        "final_comparison": "cases/high_density/high_density_02/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.3809,
+          "dice": 0.5517,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.3693,
+          "dice": 0.5394,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.6295,
+          "dice": 0.7726,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/0000272_02000_d_0000005.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/610.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "high_density_03",
+      "category_id": "high_density",
+      "category_index": 3,
+      "category_total": 10,
+      "title": "高密度目标",
+      "category": "High Density",
+      "split": "test",
+      "dataset_index": "3347",
+      "image_id": "0000299_05500_d_0000108.jpg",
+      "expression": "The black vans and cars are distributed across the scene.",
+      "is_empty_target": false,
+      "instance_count": 26,
+      "union_area_px": 44479,
+      "bbox_xywh": [
+        186,
+        122,
+        1113,
+        496
+      ],
+      "display_focus": "展示密集目标、遮挡和复杂背景下的预测稳定性。",
+      "assets": {
+        "original": "cases/high_density/high_density_03/input.jpg",
+        "gt_mask": "cases/high_density/high_density_03/gt_union_mask.png",
+        "gt_overlay": "cases/high_density/high_density_03/gt_overlay.jpg",
+        "cris_mask": "cases/high_density/high_density_03/cris_mask.png",
+        "cris_heatmap": "cases/high_density/high_density_03/cris_heatmap.png",
+        "cris_overlay": "cases/high_density/high_density_03/cris_overlay.jpg",
+        "stage1_mask": "cases/high_density/high_density_03/stage1_mask.png",
+        "stage1_heatmap": "cases/high_density/high_density_03/stage1_heatmap.png",
+        "stage1_overlay": "cases/high_density/high_density_03/stage1_overlay.jpg",
+        "stage2_mask": "cases/high_density/high_density_03/stage2_mask.png",
+        "stage2_heatmap": "cases/high_density/high_density_03/stage2_heatmap.png",
+        "stage2_overlay": "cases/high_density/high_density_03/stage2_overlay.jpg",
+        "final_comparison": "cases/high_density/high_density_03/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.4317,
+          "dice": 0.6031,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.5046,
+          "dice": 0.6707,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.5764,
+          "dice": 0.7313,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/0000299_05500_d_0000108.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/3347.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "high_density_04",
+      "category_id": "high_density",
+      "category_index": 4,
+      "category_total": 10,
+      "title": "高密度目标",
+      "category": "High Density",
+      "split": "test",
+      "dataset_index": "676",
+      "image_id": "0000272_02500_d_0000006.jpg",
+      "expression": "The white cars park along both sides of the road and in parking areas.",
+      "is_empty_target": false,
+      "instance_count": 23,
+      "union_area_px": 33795,
+      "bbox_xywh": [
+        65,
+        13,
+        980,
+        752
+      ],
+      "display_focus": "展示密集目标、遮挡和复杂背景下的预测稳定性。",
+      "assets": {
+        "original": "cases/high_density/high_density_04/input.jpg",
+        "gt_mask": "cases/high_density/high_density_04/gt_union_mask.png",
+        "gt_overlay": "cases/high_density/high_density_04/gt_overlay.jpg",
+        "cris_mask": "cases/high_density/high_density_04/cris_mask.png",
+        "cris_heatmap": "cases/high_density/high_density_04/cris_heatmap.png",
+        "cris_overlay": "cases/high_density/high_density_04/cris_overlay.jpg",
+        "stage1_mask": "cases/high_density/high_density_04/stage1_mask.png",
+        "stage1_heatmap": "cases/high_density/high_density_04/stage1_heatmap.png",
+        "stage1_overlay": "cases/high_density/high_density_04/stage1_overlay.jpg",
+        "stage2_mask": "cases/high_density/high_density_04/stage2_mask.png",
+        "stage2_heatmap": "cases/high_density/high_density_04/stage2_heatmap.png",
+        "stage2_overlay": "cases/high_density/high_density_04/stage2_overlay.jpg",
+        "final_comparison": "cases/high_density/high_density_04/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.4009,
+          "dice": 0.5723,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.4476,
+          "dice": 0.6184,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.5192,
+          "dice": 0.6835,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/0000272_02500_d_0000006.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/676.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "high_density_05",
+      "category_id": "high_density",
+      "category_index": 5,
+      "category_total": 10,
+      "title": "高密度目标",
+      "category": "High Density",
+      "split": "test",
+      "dataset_index": "2599",
+      "image_id": "9999947_00000_d_0000021.jpg",
+      "expression": "The white cars are distributed across the entire scene.",
+      "is_empty_target": false,
+      "instance_count": 21,
+      "union_area_px": 18128,
+      "bbox_xywh": [
+        47,
+        429,
+        1186,
+        621
+      ],
+      "display_focus": "展示密集目标、遮挡和复杂背景下的预测稳定性。",
+      "assets": {
+        "original": "cases/high_density/high_density_05/input.jpg",
+        "gt_mask": "cases/high_density/high_density_05/gt_union_mask.png",
+        "gt_overlay": "cases/high_density/high_density_05/gt_overlay.jpg",
+        "cris_mask": "cases/high_density/high_density_05/cris_mask.png",
+        "cris_heatmap": "cases/high_density/high_density_05/cris_heatmap.png",
+        "cris_overlay": "cases/high_density/high_density_05/cris_overlay.jpg",
+        "stage1_mask": "cases/high_density/high_density_05/stage1_mask.png",
+        "stage1_heatmap": "cases/high_density/high_density_05/stage1_heatmap.png",
+        "stage1_overlay": "cases/high_density/high_density_05/stage1_overlay.jpg",
+        "stage2_mask": "cases/high_density/high_density_05/stage2_mask.png",
+        "stage2_heatmap": "cases/high_density/high_density_05/stage2_heatmap.png",
+        "stage2_overlay": "cases/high_density/high_density_05/stage2_overlay.jpg",
+        "final_comparison": "cases/high_density/high_density_05/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.2092,
+          "dice": 0.3459,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.4418,
+          "dice": 0.6129,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.4705,
+          "dice": 0.6399,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999947_00000_d_0000021.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/2599.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "high_density_06",
+      "category_id": "high_density",
+      "category_index": 6,
+      "category_total": 10,
+      "title": "高密度目标",
+      "category": "High Density",
+      "split": "test",
+      "dataset_index": "1789",
+      "image_id": "0000074_01218_d_0000002.jpg",
+      "expression": "The pedestrians on the left side of the image.",
+      "is_empty_target": false,
+      "instance_count": 43,
+      "union_area_px": 106017,
+      "bbox_xywh": [
+        0,
+        553,
+        884,
+        527
+      ],
+      "display_focus": "展示密集目标、遮挡和复杂背景下的预测稳定性。",
+      "assets": {
+        "original": "cases/high_density/high_density_06/input.jpg",
+        "gt_mask": "cases/high_density/high_density_06/gt_union_mask.png",
+        "gt_overlay": "cases/high_density/high_density_06/gt_overlay.jpg",
+        "cris_mask": "cases/high_density/high_density_06/cris_mask.png",
+        "cris_heatmap": "cases/high_density/high_density_06/cris_heatmap.png",
+        "cris_overlay": "cases/high_density/high_density_06/cris_overlay.jpg",
+        "stage1_mask": "cases/high_density/high_density_06/stage1_mask.png",
+        "stage1_heatmap": "cases/high_density/high_density_06/stage1_heatmap.png",
+        "stage1_overlay": "cases/high_density/high_density_06/stage1_overlay.jpg",
+        "stage2_mask": "cases/high_density/high_density_06/stage2_mask.png",
+        "stage2_heatmap": "cases/high_density/high_density_06/stage2_heatmap.png",
+        "stage2_overlay": "cases/high_density/high_density_06/stage2_overlay.jpg",
+        "final_comparison": "cases/high_density/high_density_06/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.3771,
+          "dice": 0.5476,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.4085,
+          "dice": 0.5801,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/0000074_01218_d_0000002.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/1789.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "high_density_07",
+      "category_id": "high_density",
+      "category_index": 7,
+      "category_total": 10,
+      "title": "高密度目标",
+      "category": "High Density",
+      "split": "test",
+      "dataset_index": "555",
+      "image_id": "9999938_00000_d_0000218.jpg",
+      "expression": "The red cars are scattered throughout the image.",
+      "is_empty_target": false,
+      "instance_count": 20,
+      "union_area_px": 10723,
+      "bbox_xywh": [
+        27,
+        0,
+        1017,
+        788
+      ],
+      "display_focus": "展示密集目标、遮挡和复杂背景下的预测稳定性。",
+      "assets": {
+        "original": "cases/high_density/high_density_07/input.jpg",
+        "gt_mask": "cases/high_density/high_density_07/gt_union_mask.png",
+        "gt_overlay": "cases/high_density/high_density_07/gt_overlay.jpg",
+        "cris_mask": "cases/high_density/high_density_07/cris_mask.png",
+        "cris_heatmap": "cases/high_density/high_density_07/cris_heatmap.png",
+        "cris_overlay": "cases/high_density/high_density_07/cris_overlay.jpg",
+        "stage1_mask": "cases/high_density/high_density_07/stage1_mask.png",
+        "stage1_heatmap": "cases/high_density/high_density_07/stage1_heatmap.png",
+        "stage1_overlay": "cases/high_density/high_density_07/stage1_overlay.jpg",
+        "stage2_mask": "cases/high_density/high_density_07/stage2_mask.png",
+        "stage2_heatmap": "cases/high_density/high_density_07/stage2_heatmap.png",
+        "stage2_overlay": "cases/high_density/high_density_07/stage2_overlay.jpg",
+        "final_comparison": "cases/high_density/high_density_07/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.204,
+          "dice": 0.3389,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.39,
+          "dice": 0.5612,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.3923,
+          "dice": 0.5635,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999938_00000_d_0000218.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/555.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "high_density_08",
+      "category_id": "high_density",
+      "category_index": 8,
+      "category_total": 10,
+      "title": "高密度目标",
+      "category": "High Density",
+      "split": "test",
+      "dataset_index": "166",
+      "image_id": "0000265_03000_d_0000007.jpg",
+      "expression": "The white cars parked or driving through the area.",
+      "is_empty_target": false,
+      "instance_count": 30,
+      "union_area_px": 27388,
+      "bbox_xywh": [
+        2,
+        108,
+        1075,
+        657
+      ],
+      "display_focus": "展示密集目标、遮挡和复杂背景下的预测稳定性。",
+      "assets": {
+        "original": "cases/high_density/high_density_08/input.jpg",
+        "gt_mask": "cases/high_density/high_density_08/gt_union_mask.png",
+        "gt_overlay": "cases/high_density/high_density_08/gt_overlay.jpg",
+        "cris_mask": "cases/high_density/high_density_08/cris_mask.png",
+        "cris_heatmap": "cases/high_density/high_density_08/cris_heatmap.png",
+        "cris_overlay": "cases/high_density/high_density_08/cris_overlay.jpg",
+        "stage1_mask": "cases/high_density/high_density_08/stage1_mask.png",
+        "stage1_heatmap": "cases/high_density/high_density_08/stage1_heatmap.png",
+        "stage1_overlay": "cases/high_density/high_density_08/stage1_overlay.jpg",
+        "stage2_mask": "cases/high_density/high_density_08/stage2_mask.png",
+        "stage2_heatmap": "cases/high_density/high_density_08/stage2_heatmap.png",
+        "stage2_overlay": "cases/high_density/high_density_08/stage2_overlay.jpg",
+        "final_comparison": "cases/high_density/high_density_08/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.2742,
+          "dice": 0.4304,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.3042,
+          "dice": 0.4665,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.3635,
+          "dice": 0.5332,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/0000265_03000_d_0000007.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/166.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "high_density_09",
+      "category_id": "high_density",
+      "category_index": 9,
+      "category_total": 10,
+      "title": "高密度目标",
+      "category": "High Density",
+      "split": "test",
+      "dataset_index": "1656",
+      "image_id": "0000120_02001_d_0000096.jpg",
+      "expression": "The group of people gathered near the sidewalk on the left side of the image.",
+      "is_empty_target": false,
+      "instance_count": 51,
+      "union_area_px": 23995,
+      "bbox_xywh": [
+        30,
+        231,
+        532,
+        173
+      ],
+      "display_focus": "展示密集目标、遮挡和复杂背景下的预测稳定性。",
+      "assets": {
+        "original": "cases/high_density/high_density_09/input.jpg",
+        "gt_mask": "cases/high_density/high_density_09/gt_union_mask.png",
+        "gt_overlay": "cases/high_density/high_density_09/gt_overlay.jpg",
+        "cris_mask": "cases/high_density/high_density_09/cris_mask.png",
+        "cris_heatmap": "cases/high_density/high_density_09/cris_heatmap.png",
+        "cris_overlay": "cases/high_density/high_density_09/cris_overlay.jpg",
+        "stage1_mask": "cases/high_density/high_density_09/stage1_mask.png",
+        "stage1_heatmap": "cases/high_density/high_density_09/stage1_heatmap.png",
+        "stage1_overlay": "cases/high_density/high_density_09/stage1_overlay.jpg",
+        "stage2_mask": "cases/high_density/high_density_09/stage2_mask.png",
+        "stage2_heatmap": "cases/high_density/high_density_09/stage2_heatmap.png",
+        "stage2_overlay": "cases/high_density/high_density_09/stage2_overlay.jpg",
+        "final_comparison": "cases/high_density/high_density_09/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.0,
+          "dice": 0.0,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.4135,
+          "dice": 0.5851,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.343,
+          "dice": 0.5108,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/0000120_02001_d_0000096.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/1656.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "high_density_10",
+      "category_id": "high_density",
+      "category_index": 10,
+      "category_total": 10,
+      "title": "高密度目标",
+      "category": "High Density",
+      "split": "test",
+      "dataset_index": "361",
+      "image_id": "0000078_03171_d_0000009.jpg",
+      "expression": "The white trucks scattered around the lot.",
+      "is_empty_target": false,
+      "instance_count": 26,
+      "union_area_px": 53088,
+      "bbox_xywh": [
+        0,
+        85,
+        1242,
+        384
+      ],
+      "display_focus": "展示密集目标、遮挡和复杂背景下的预测稳定性。",
+      "assets": {
+        "original": "cases/high_density/high_density_10/input.jpg",
+        "gt_mask": "cases/high_density/high_density_10/gt_union_mask.png",
+        "gt_overlay": "cases/high_density/high_density_10/gt_overlay.jpg",
+        "cris_mask": "cases/high_density/high_density_10/cris_mask.png",
+        "cris_heatmap": "cases/high_density/high_density_10/cris_heatmap.png",
+        "cris_overlay": "cases/high_density/high_density_10/cris_overlay.jpg",
+        "stage1_mask": "cases/high_density/high_density_10/stage1_mask.png",
+        "stage1_heatmap": "cases/high_density/high_density_10/stage1_heatmap.png",
+        "stage1_overlay": "cases/high_density/high_density_10/stage1_overlay.jpg",
+        "stage2_mask": "cases/high_density/high_density_10/stage2_mask.png",
+        "stage2_heatmap": "cases/high_density/high_density_10/stage2_heatmap.png",
+        "stage2_overlay": "cases/high_density/high_density_10/stage2_overlay.jpg",
+        "final_comparison": "cases/high_density/high_density_10/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": 0.1712,
+          "dice": 0.2923,
+          "empty_correct": null,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": 0.309,
+          "dice": 0.4721,
+          "empty_correct": null,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": 0.3106,
+          "dice": 0.474,
+          "empty_correct": null,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/0000078_03171_d_0000009.jpg",
+        "gt_mask_path": "/root/autodl-tmp/datasets/AeroRIS/union_masks/test/361.png",
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "empty_target_01",
+      "category_id": "empty_target",
+      "category_index": 1,
+      "category_total": 10,
+      "title": "空目标拒识",
+      "category": "Empty Target",
+      "split": "test",
+      "dataset_index": "1855",
+      "image_id": "9999952_00000_d_0000118.jpg",
+      "expression": "The van is located on the right side of the image.",
+      "is_empty_target": true,
+      "instance_count": 0,
+      "union_area_px": 0,
+      "bbox_xywh": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "display_focus": "展示表达中目标不存在时，模型是否避免强行分割背景。",
+      "assets": {
+        "original": "cases/empty_target/empty_target_01/input.jpg",
+        "gt_mask": "cases/empty_target/empty_target_01/gt_union_mask.png",
+        "gt_overlay": "cases/empty_target/empty_target_01/gt_overlay.jpg",
+        "cris_mask": "cases/empty_target/empty_target_01/cris_mask.png",
+        "cris_heatmap": "cases/empty_target/empty_target_01/cris_heatmap.png",
+        "cris_overlay": "cases/empty_target/empty_target_01/cris_overlay.jpg",
+        "stage1_mask": "cases/empty_target/empty_target_01/stage1_mask.png",
+        "stage1_heatmap": "cases/empty_target/empty_target_01/stage1_heatmap.png",
+        "stage1_overlay": "cases/empty_target/empty_target_01/stage1_overlay.jpg",
+        "stage2_mask": "cases/empty_target/empty_target_01/stage2_mask.png",
+        "stage2_heatmap": "cases/empty_target/empty_target_01/stage2_heatmap.png",
+        "stage2_overlay": "cases/empty_target/empty_target_01/stage2_overlay.jpg",
+        "final_comparison": "cases/empty_target/empty_target_01/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": true,
+          "false_positive_area_px": 0,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": false,
+          "false_positive_area_px": 1412,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": true,
+          "false_positive_area_px": 0,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999952_00000_d_0000118.jpg",
+        "gt_mask_path": null,
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "empty_target_02",
+      "category_id": "empty_target",
+      "category_index": 2,
+      "category_total": 10,
+      "title": "空目标拒识",
+      "category": "Empty Target",
+      "split": "test",
+      "dataset_index": "583",
+      "image_id": "9999952_00000_d_0000128.jpg",
+      "expression": "The van parked near the gas station on the bottom left side of the image.",
+      "is_empty_target": true,
+      "instance_count": 0,
+      "union_area_px": 0,
+      "bbox_xywh": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "display_focus": "展示表达中目标不存在时，模型是否避免强行分割背景。",
+      "assets": {
+        "original": "cases/empty_target/empty_target_02/input.jpg",
+        "gt_mask": "cases/empty_target/empty_target_02/gt_union_mask.png",
+        "gt_overlay": "cases/empty_target/empty_target_02/gt_overlay.jpg",
+        "cris_mask": "cases/empty_target/empty_target_02/cris_mask.png",
+        "cris_heatmap": "cases/empty_target/empty_target_02/cris_heatmap.png",
+        "cris_overlay": "cases/empty_target/empty_target_02/cris_overlay.jpg",
+        "stage1_mask": "cases/empty_target/empty_target_02/stage1_mask.png",
+        "stage1_heatmap": "cases/empty_target/empty_target_02/stage1_heatmap.png",
+        "stage1_overlay": "cases/empty_target/empty_target_02/stage1_overlay.jpg",
+        "stage2_mask": "cases/empty_target/empty_target_02/stage2_mask.png",
+        "stage2_heatmap": "cases/empty_target/empty_target_02/stage2_heatmap.png",
+        "stage2_overlay": "cases/empty_target/empty_target_02/stage2_overlay.jpg",
+        "final_comparison": "cases/empty_target/empty_target_02/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": true,
+          "false_positive_area_px": 0,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": false,
+          "false_positive_area_px": 1205,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": true,
+          "false_positive_area_px": 0,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999952_00000_d_0000128.jpg",
+        "gt_mask_path": null,
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "empty_target_03",
+      "category_id": "empty_target",
+      "category_index": 3,
+      "category_total": 10,
+      "title": "空目标拒识",
+      "category": "Empty Target",
+      "split": "test",
+      "dataset_index": "2805",
+      "image_id": "0000063_08000_d_0000009.jpg",
+      "expression": "The cars are scattered throughout the square.",
+      "is_empty_target": true,
+      "instance_count": 0,
+      "union_area_px": 0,
+      "bbox_xywh": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "display_focus": "展示表达中目标不存在时，模型是否避免强行分割背景。",
+      "assets": {
+        "original": "cases/empty_target/empty_target_03/input.jpg",
+        "gt_mask": "cases/empty_target/empty_target_03/gt_union_mask.png",
+        "gt_overlay": "cases/empty_target/empty_target_03/gt_overlay.jpg",
+        "cris_mask": "cases/empty_target/empty_target_03/cris_mask.png",
+        "cris_heatmap": "cases/empty_target/empty_target_03/cris_heatmap.png",
+        "cris_overlay": "cases/empty_target/empty_target_03/cris_overlay.jpg",
+        "stage1_mask": "cases/empty_target/empty_target_03/stage1_mask.png",
+        "stage1_heatmap": "cases/empty_target/empty_target_03/stage1_heatmap.png",
+        "stage1_overlay": "cases/empty_target/empty_target_03/stage1_overlay.jpg",
+        "stage2_mask": "cases/empty_target/empty_target_03/stage2_mask.png",
+        "stage2_heatmap": "cases/empty_target/empty_target_03/stage2_heatmap.png",
+        "stage2_overlay": "cases/empty_target/empty_target_03/stage2_overlay.jpg",
+        "final_comparison": "cases/empty_target/empty_target_03/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": true,
+          "false_positive_area_px": 0,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": false,
+          "false_positive_area_px": 1000,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": true,
+          "false_positive_area_px": 0,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/0000063_08000_d_0000009.jpg",
+        "gt_mask_path": null,
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "empty_target_04",
+      "category_id": "empty_target",
+      "category_index": 4,
+      "category_total": 10,
+      "title": "空目标拒识",
+      "category": "Empty Target",
+      "split": "test",
+      "dataset_index": "2651",
+      "image_id": "9999938_00000_d_0000455.jpg",
+      "expression": "The yellow cars are located on the right side of the image.",
+      "is_empty_target": true,
+      "instance_count": 0,
+      "union_area_px": 0,
+      "bbox_xywh": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "display_focus": "展示表达中目标不存在时，模型是否避免强行分割背景。",
+      "assets": {
+        "original": "cases/empty_target/empty_target_04/input.jpg",
+        "gt_mask": "cases/empty_target/empty_target_04/gt_union_mask.png",
+        "gt_overlay": "cases/empty_target/empty_target_04/gt_overlay.jpg",
+        "cris_mask": "cases/empty_target/empty_target_04/cris_mask.png",
+        "cris_heatmap": "cases/empty_target/empty_target_04/cris_heatmap.png",
+        "cris_overlay": "cases/empty_target/empty_target_04/cris_overlay.jpg",
+        "stage1_mask": "cases/empty_target/empty_target_04/stage1_mask.png",
+        "stage1_heatmap": "cases/empty_target/empty_target_04/stage1_heatmap.png",
+        "stage1_overlay": "cases/empty_target/empty_target_04/stage1_overlay.jpg",
+        "stage2_mask": "cases/empty_target/empty_target_04/stage2_mask.png",
+        "stage2_heatmap": "cases/empty_target/empty_target_04/stage2_heatmap.png",
+        "stage2_overlay": "cases/empty_target/empty_target_04/stage2_overlay.jpg",
+        "final_comparison": "cases/empty_target/empty_target_04/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": true,
+          "false_positive_area_px": 0,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": false,
+          "false_positive_area_px": 714,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": true,
+          "false_positive_area_px": 0,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999938_00000_d_0000455.jpg",
+        "gt_mask_path": null,
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "empty_target_05",
+      "category_id": "empty_target",
+      "category_index": 5,
+      "category_total": 10,
+      "title": "空目标拒识",
+      "category": "Empty Target",
+      "split": "test",
+      "dataset_index": "350",
+      "image_id": "0000074_16210_d_0000032.jpg",
+      "expression": "The cars parked on the road.",
+      "is_empty_target": true,
+      "instance_count": 0,
+      "union_area_px": 0,
+      "bbox_xywh": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "display_focus": "展示表达中目标不存在时，模型是否避免强行分割背景。",
+      "assets": {
+        "original": "cases/empty_target/empty_target_05/input.jpg",
+        "gt_mask": "cases/empty_target/empty_target_05/gt_union_mask.png",
+        "gt_overlay": "cases/empty_target/empty_target_05/gt_overlay.jpg",
+        "cris_mask": "cases/empty_target/empty_target_05/cris_mask.png",
+        "cris_heatmap": "cases/empty_target/empty_target_05/cris_heatmap.png",
+        "cris_overlay": "cases/empty_target/empty_target_05/cris_overlay.jpg",
+        "stage1_mask": "cases/empty_target/empty_target_05/stage1_mask.png",
+        "stage1_heatmap": "cases/empty_target/empty_target_05/stage1_heatmap.png",
+        "stage1_overlay": "cases/empty_target/empty_target_05/stage1_overlay.jpg",
+        "stage2_mask": "cases/empty_target/empty_target_05/stage2_mask.png",
+        "stage2_heatmap": "cases/empty_target/empty_target_05/stage2_heatmap.png",
+        "stage2_overlay": "cases/empty_target/empty_target_05/stage2_overlay.jpg",
+        "final_comparison": "cases/empty_target/empty_target_05/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": true,
+          "false_positive_area_px": 0,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": true,
+          "false_positive_area_px": 0,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": true,
+          "false_positive_area_px": 0,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/0000074_16210_d_0000032.jpg",
+        "gt_mask_path": null,
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "empty_target_06",
+      "category_id": "empty_target",
+      "category_index": 6,
+      "category_total": 10,
+      "title": "空目标拒识",
+      "category": "Empty Target",
+      "split": "test",
+      "dataset_index": "500",
+      "image_id": "9999976_00000_d_0000015.jpg",
+      "expression": "The green cars park along the roads.",
+      "is_empty_target": true,
+      "instance_count": 0,
+      "union_area_px": 0,
+      "bbox_xywh": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "display_focus": "展示表达中目标不存在时，模型是否避免强行分割背景。",
+      "assets": {
+        "original": "cases/empty_target/empty_target_06/input.jpg",
+        "gt_mask": "cases/empty_target/empty_target_06/gt_union_mask.png",
+        "gt_overlay": "cases/empty_target/empty_target_06/gt_overlay.jpg",
+        "cris_mask": "cases/empty_target/empty_target_06/cris_mask.png",
+        "cris_heatmap": "cases/empty_target/empty_target_06/cris_heatmap.png",
+        "cris_overlay": "cases/empty_target/empty_target_06/cris_overlay.jpg",
+        "stage1_mask": "cases/empty_target/empty_target_06/stage1_mask.png",
+        "stage1_heatmap": "cases/empty_target/empty_target_06/stage1_heatmap.png",
+        "stage1_overlay": "cases/empty_target/empty_target_06/stage1_overlay.jpg",
+        "stage2_mask": "cases/empty_target/empty_target_06/stage2_mask.png",
+        "stage2_heatmap": "cases/empty_target/empty_target_06/stage2_heatmap.png",
+        "stage2_overlay": "cases/empty_target/empty_target_06/stage2_overlay.jpg",
+        "final_comparison": "cases/empty_target/empty_target_06/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": true,
+          "false_positive_area_px": 0,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": true,
+          "false_positive_area_px": 0,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": true,
+          "false_positive_area_px": 0,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999976_00000_d_0000015.jpg",
+        "gt_mask_path": null,
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "empty_target_07",
+      "category_id": "empty_target",
+      "category_index": 7,
+      "category_total": 10,
+      "title": "空目标拒识",
+      "category": "Empty Target",
+      "split": "test",
+      "dataset_index": "501",
+      "image_id": "9999976_00000_d_0000015.jpg",
+      "expression": "The yellow cars park in a line near the bottom of the image.",
+      "is_empty_target": true,
+      "instance_count": 0,
+      "union_area_px": 0,
+      "bbox_xywh": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "display_focus": "展示表达中目标不存在时，模型是否避免强行分割背景。",
+      "assets": {
+        "original": "cases/empty_target/empty_target_07/input.jpg",
+        "gt_mask": "cases/empty_target/empty_target_07/gt_union_mask.png",
+        "gt_overlay": "cases/empty_target/empty_target_07/gt_overlay.jpg",
+        "cris_mask": "cases/empty_target/empty_target_07/cris_mask.png",
+        "cris_heatmap": "cases/empty_target/empty_target_07/cris_heatmap.png",
+        "cris_overlay": "cases/empty_target/empty_target_07/cris_overlay.jpg",
+        "stage1_mask": "cases/empty_target/empty_target_07/stage1_mask.png",
+        "stage1_heatmap": "cases/empty_target/empty_target_07/stage1_heatmap.png",
+        "stage1_overlay": "cases/empty_target/empty_target_07/stage1_overlay.jpg",
+        "stage2_mask": "cases/empty_target/empty_target_07/stage2_mask.png",
+        "stage2_heatmap": "cases/empty_target/empty_target_07/stage2_heatmap.png",
+        "stage2_overlay": "cases/empty_target/empty_target_07/stage2_overlay.jpg",
+        "final_comparison": "cases/empty_target/empty_target_07/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": true,
+          "false_positive_area_px": 0,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": true,
+          "false_positive_area_px": 0,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": true,
+          "false_positive_area_px": 0,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999976_00000_d_0000015.jpg",
+        "gt_mask_path": null,
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "empty_target_08",
+      "category_id": "empty_target",
+      "category_index": 8,
+      "category_total": 10,
+      "title": "空目标拒识",
+      "category": "Empty Target",
+      "split": "test",
+      "dataset_index": "537",
+      "image_id": "9999941_00000_d_0000022.jpg",
+      "expression": "The car is near the bottom right corner of the image.",
+      "is_empty_target": true,
+      "instance_count": 0,
+      "union_area_px": 0,
+      "bbox_xywh": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "display_focus": "展示表达中目标不存在时，模型是否避免强行分割背景。",
+      "assets": {
+        "original": "cases/empty_target/empty_target_08/input.jpg",
+        "gt_mask": "cases/empty_target/empty_target_08/gt_union_mask.png",
+        "gt_overlay": "cases/empty_target/empty_target_08/gt_overlay.jpg",
+        "cris_mask": "cases/empty_target/empty_target_08/cris_mask.png",
+        "cris_heatmap": "cases/empty_target/empty_target_08/cris_heatmap.png",
+        "cris_overlay": "cases/empty_target/empty_target_08/cris_overlay.jpg",
+        "stage1_mask": "cases/empty_target/empty_target_08/stage1_mask.png",
+        "stage1_heatmap": "cases/empty_target/empty_target_08/stage1_heatmap.png",
+        "stage1_overlay": "cases/empty_target/empty_target_08/stage1_overlay.jpg",
+        "stage2_mask": "cases/empty_target/empty_target_08/stage2_mask.png",
+        "stage2_heatmap": "cases/empty_target/empty_target_08/stage2_heatmap.png",
+        "stage2_overlay": "cases/empty_target/empty_target_08/stage2_overlay.jpg",
+        "final_comparison": "cases/empty_target/empty_target_08/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": true,
+          "false_positive_area_px": 0,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": true,
+          "false_positive_area_px": 0,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": true,
+          "false_positive_area_px": 0,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999941_00000_d_0000022.jpg",
+        "gt_mask_path": null,
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "empty_target_09",
+      "category_id": "empty_target",
+      "category_index": 9,
+      "category_total": 10,
+      "title": "空目标拒识",
+      "category": "Empty Target",
+      "split": "test",
+      "dataset_index": "859",
+      "image_id": "9999952_00000_d_0000004.jpg",
+      "expression": "The van parked near the bottom left of the image.",
+      "is_empty_target": true,
+      "instance_count": 0,
+      "union_area_px": 0,
+      "bbox_xywh": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "display_focus": "展示表达中目标不存在时，模型是否避免强行分割背景。",
+      "assets": {
+        "original": "cases/empty_target/empty_target_09/input.jpg",
+        "gt_mask": "cases/empty_target/empty_target_09/gt_union_mask.png",
+        "gt_overlay": "cases/empty_target/empty_target_09/gt_overlay.jpg",
+        "cris_mask": "cases/empty_target/empty_target_09/cris_mask.png",
+        "cris_heatmap": "cases/empty_target/empty_target_09/cris_heatmap.png",
+        "cris_overlay": "cases/empty_target/empty_target_09/cris_overlay.jpg",
+        "stage1_mask": "cases/empty_target/empty_target_09/stage1_mask.png",
+        "stage1_heatmap": "cases/empty_target/empty_target_09/stage1_heatmap.png",
+        "stage1_overlay": "cases/empty_target/empty_target_09/stage1_overlay.jpg",
+        "stage2_mask": "cases/empty_target/empty_target_09/stage2_mask.png",
+        "stage2_heatmap": "cases/empty_target/empty_target_09/stage2_heatmap.png",
+        "stage2_overlay": "cases/empty_target/empty_target_09/stage2_overlay.jpg",
+        "final_comparison": "cases/empty_target/empty_target_09/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": true,
+          "false_positive_area_px": 0,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": true,
+          "false_positive_area_px": 0,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": true,
+          "false_positive_area_px": 0,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999952_00000_d_0000004.jpg",
+        "gt_mask_path": null,
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    },
+    {
+      "case_id": "empty_target_10",
+      "category_id": "empty_target",
+      "category_index": 10,
+      "category_total": 10,
+      "title": "空目标拒识",
+      "category": "Empty Target",
+      "split": "test",
+      "dataset_index": "1583",
+      "image_id": "9999938_00000_d_0000373.jpg",
+      "expression": "The black truck near the building under construction.",
+      "is_empty_target": true,
+      "instance_count": 0,
+      "union_area_px": 0,
+      "bbox_xywh": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "display_focus": "展示表达中目标不存在时，模型是否避免强行分割背景。",
+      "assets": {
+        "original": "cases/empty_target/empty_target_10/input.jpg",
+        "gt_mask": "cases/empty_target/empty_target_10/gt_union_mask.png",
+        "gt_overlay": "cases/empty_target/empty_target_10/gt_overlay.jpg",
+        "cris_mask": "cases/empty_target/empty_target_10/cris_mask.png",
+        "cris_heatmap": "cases/empty_target/empty_target_10/cris_heatmap.png",
+        "cris_overlay": "cases/empty_target/empty_target_10/cris_overlay.jpg",
+        "stage1_mask": "cases/empty_target/empty_target_10/stage1_mask.png",
+        "stage1_heatmap": "cases/empty_target/empty_target_10/stage1_heatmap.png",
+        "stage1_overlay": "cases/empty_target/empty_target_10/stage1_overlay.jpg",
+        "stage2_mask": "cases/empty_target/empty_target_10/stage2_mask.png",
+        "stage2_heatmap": "cases/empty_target/empty_target_10/stage2_heatmap.png",
+        "stage2_overlay": "cases/empty_target/empty_target_10/stage2_overlay.jpg",
+        "final_comparison": "cases/empty_target/empty_target_10/final_comparison.jpg"
+      },
+      "per_case_metrics": {
+        "cris": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": true,
+          "false_positive_area_px": 0,
+          "latency_ms": 12.34
+        },
+        "stage1": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": true,
+          "false_positive_area_px": 0,
+          "latency_ms": 12.52
+        },
+        "stage2": {
+          "iou": null,
+          "dice": null,
+          "empty_correct": true,
+          "false_positive_area_px": 0,
+          "latency_ms": 15.57
+        }
+      },
+      "source": {
+        "image_path": "/root/autodl-tmp/datasets/VisDrone2019/all_image/9999938_00000_d_0000373.jpg",
+        "gt_mask_path": null,
+        "prediction_dirs": {
+          "cris": "CRIS",
+          "stage1": "AeroCRIS_tiny_count",
+          "stage2": "AeroCRIS_TTA_coord_local"
+        }
+      }
+    }
+  ],
+  "global_metrics": [
+    {
+      "method": "CRIS baseline",
+      "source_method": "CRIS",
+      "mIoU": 17.82,
+      "oIoU": 24.41,
+      "latency_ms": 12.34,
+      "fps": 81.07,
+      "empty_correct": 116,
+      "empty_total": 156
+    },
+    {
+      "method": "AeroCRIS Stage 1",
+      "source_method": "AeroCRIS_tiny_count",
+      "mIoU": 34.22,
+      "oIoU": 38.61,
+      "latency_ms": 12.52,
+      "fps": 79.88,
+      "empty_correct": 31,
+      "empty_total": 156
+    },
+    {
+      "method": "AeroCRIS Stage 2 TTA",
+      "source_method": "AeroCRIS_TTA_coord_local",
+      "mIoU": 36.76,
+      "oIoU": 41.11,
+      "latency_ms": 15.57,
+      "fps": 64.21,
+      "empty_correct": 15,
+      "empty_total": 156
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "ok": true,
+  "errors": [],
+  "case_count": 50,
+  "category_counts": {
+    "small_target": 10,
+    "multi_instance": 10,
+    "spatial_relation": 10,
+    "high_density": 10,
+    "empty_target": 10
+  }
+}

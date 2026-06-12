@@ -1,0 +1,14 @@
+{
+  "output_root": "/root/autodl-tmp/aeroris_demo_outputs",
+  "split": "test",
+  "case_count": 50,
+  "category_counts": {
+    "small_target": 10,
+    "multi_instance": 10,
+    "spatial_relation": 10,
+    "high_density": 10,
+    "empty_target": 10
+  },
+  "raw_logits_available": false,
+  "logits_note": "Raw model logits were not present in the workspace. The logits/*.npy files are float32 visualization proxies derived from binary prediction masks."
+}
